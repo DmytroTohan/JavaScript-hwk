@@ -34,9 +34,9 @@ function createForm() {
 function createFormElement(formElem) {
     for (var element in formElem) {
         var inputEl = document.createElement('input');
-        elObject = formElem[element];
-        for (var property in elObject) {
-            inputEl.setAttribute(property, elObject[property]);
+        var elObject = formElem[element];
+        for (var prop in elObject) {
+            inputEl.setAttribute(prop, elObject[prop]);
         }
         form.appendChild(inputEl);
     }
