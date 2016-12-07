@@ -1,6 +1,6 @@
 // Create form and build obj
 function createForm() {
-    form = document.createElement("form");
+    var form = document.createElement("form");
     form.setAttribute("name", "login");
     form.setAttribute("action", "google.com");
     form.setAttribute("onsubmit", "return checkForm()");
@@ -27,11 +27,11 @@ function createForm() {
             value: 'Validate Me'
         }
     };
-    createFormElement(formElements);
+    createFormElement(form, formElements);
 }
 
 // Create input elements
-function createFormElement(formElem) {
+function createFormElement(form, formElem) {
     for (var element in formElem) {
         var inputEl = document.createElement('input');
         var elObject = formElem[element];
