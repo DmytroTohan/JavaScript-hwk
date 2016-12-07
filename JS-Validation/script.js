@@ -45,8 +45,10 @@ function createFormElement(form, formElem) {
 // Validate function
 function checkForm() {
     var valid = true;
+    var inputElements = document.forms[0].childNodes;
+    var 
     // Check age
-    var age = form.elements[0].value;
+    var age = inputElements[0].value;
     var numbers = '0123456789';
     for (var i = 0; i < age.length; i++) {
         if (numbers.indexOf(age[i]) === -1) {
@@ -57,14 +59,14 @@ function checkForm() {
     }
     // Check user name
     var rightName = 'user_';
-    var userName = form.elements[1].value;
+    var userName = inputElements[1].value;
     if (userName.indexOf(rightName) !== 0) {
         alert('User name should start from "user_"');
         valid = false;
     }
     // Check current date
     var currentDate = moment().format('DD/MM/YYYY');
-    var formDate = form.elements[2].value;
+    var formDate = inputElements[2].value;
     if (formDate !== currentDate) {
         alert('Your data is invalid');
         valid = false;
