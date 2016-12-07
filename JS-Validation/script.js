@@ -46,7 +46,6 @@ function createFormElement(form, formElem) {
 function checkForm() {
     var valid = true;
     var inputElements = document.forms[0].childNodes;
-    var 
     // Check age
     var age = inputElements[0].value;
     var numbers = '0123456789';
