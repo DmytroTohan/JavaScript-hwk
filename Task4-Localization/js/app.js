@@ -9,6 +9,12 @@ function putWelcomeMessageToLocalStorage() {
         };
         localStorage.setItem('welcomeMessage', JSON.stringify(welcomeMessage));
     }
+    // if the page is loaded for the first time
+    // put defaul language to local storage.
+    // or get browser language from 'navigator.language' 
+    if (!localStorage.getItem('lastLanguages')) {
+        localStorage.setItem('lastLanguages', 'ua');
+    }
 }
 
 // invisible all messages in 'lang' class
