@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Task5</title>
+    </head>
+    <body>
+        <form class="stop-propagation">
+            <p>
+                Функція
+                <b>event.stopPropagation()</b>
+                дозволяє виконати подію на поточному елементі, але блокує виконання функції на всіх батьківських елементах. Для кращого розуміння, розгланемо приклад: для двох блоків, що нище, на подію onClick описані дві функції(alert-ом виводиться повідомлення).
+                Для правого виконується функція із застосовується
+                <b>event.stopPropagation()</b>, для лівого ні. Якщо клікнути по лівому блоці, то функція виконається для поточно елемента(на котрому клікнули) і ще по одному разу для кожного батьківського. У випадку з правим блоком, то функція виконається тільки
+                один раз - для поточного елемента.
+            </p>
+            <div class="cont">
+                <div id="leftbox1" class="box">1
+                    <div id="leftbox2" class="box">2
+                        <div id="leftbox3" class="box">3</div>
+                    </div>
+                </div>
+                <div id="rightbox1" class="box">1
+                    <div id="rightbox2" class="box">2
+                        <div id="rightbox3" class="box">3</div>
+                    </div>
+                </div>
+            </div>
+            <div class="cont2">
+                <div class="prevent-link">
+                    <p>
+                        Функція event.preventDefaul() застосовується для відміни дій браузера по замовчуванню. Наприклад, при кліку на посилання
+                        <br>
+                        <i>Link with event.preventDefaul()</i>
+                        перехід на новий URL не відбудиться.
+                    </p>
+                    <a id="link1" href="https://cursor-education.slack.com/messages/fe-homeworks-hwk/">Link with event.preventDefaul()</a>
+                </div>
+                <p>
+                    У випадку з цим лінком, браузер зробить перехід за посилання.
+                </p>
+                <div class="prevent-link">
+                    <a id="link2" href="https://cursor-education.slack.com/messages/fe-homeworks-hwk/">Link without event.preventDefaul()</a>
+                </div>
+            </div>
+            <p>
+                Сходження - функції
+                <b>preventDefaul()</b>
+                і
+                <b>stopPropagation()</b>
+                використовуються для блокування подій.
+                <br>
+                Відмінності - перша блокує стандартну дію браузера, друга - виконання події для батьківських елементів.
+            </p>
+        </form>
+        <script src="js/app.js"></script>
+    </body>
+</html>
