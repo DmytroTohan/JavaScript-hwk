@@ -1,0 +1,27 @@
+.stop-propagation {
+  width: 50%; 
+}
+
+.cont {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#leftbox1, #rightbox1 {
+  margin: 20px;
+  background: red;
+  width: 200px; height: 200px;
+  text-align: center;
+}
+
+#leftbox2, #rightbox2 {
+  background: green;
+  width: 150px; height: 150px;
+  text-align: center;
+}
+
+#leftbox3, #rightbox3 {
+  background: blue;
+  width: 100px; height: 100px;
+  text-align: center;
+}
