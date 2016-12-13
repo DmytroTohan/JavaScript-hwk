@@ -9,17 +9,17 @@ function createForm() {
         age: {
             type: 'text',
             name: 'age',
-            value: 'Age'
+            placeholder: 25 
         },
         username: {
             type: 'text',
             name: 'username',
-            value: 'User name'
+            placeholder: 'user_name'
         },
         date: {
             type: 'text',
             name: 'date',
-            value: 'Date'
+            placeholder: '13/12/2016'
         },
         submit: {
             type: 'submit',
@@ -50,9 +50,8 @@ function checkForm() {
     var age = inputElements[0].value;
     var pattern = '/[^0-9]/';
     if (age.search(pattern) !== -1) {
-            valid = false;
-            alert('age should contains only numbers!');
-        }
+        valid = false;
+        alert('age should contains only numbers!');        
     }
     // Check user name
     var rightName = 'user_';
