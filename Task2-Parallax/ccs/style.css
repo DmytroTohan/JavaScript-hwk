@@ -5,11 +5,11 @@ h1 {
 .content {
   background: blue;
   height: 35vh;
-  width: 30%;
+  width: 640px;
 }
 
 #parallax {
-  width: 30%;
+  width: 640px;
   background: red;
   background: url(http://www.verticalworld.net/school/programs/uploads/pics/program_108_1.jpg);
   height: 40vh;
