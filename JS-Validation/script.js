@@ -48,12 +48,10 @@ function checkForm() {
     var inputElements = document.forms[0].childNodes;
     // Check age
     var age = inputElements[0].value;
-    var numbers = '0123456789';
-    for (var i = 0; i < age.length; i++) {
-        if (numbers.indexOf(age[i]) === -1) {
+    var pattern = '/[^0-9]/';
+    if (age.search(pattern) !== -1) {
             valid = false;
             alert('age should contains only numbers!');
-            break;
         }
     }
     // Check user name
