@@ -28,7 +28,7 @@ function showElementsByAttrValue(attrValue) {
         // here we can use property 'dataset' and write:
         // var isUserOsVersion = messEl.dataset.version === attrValue;
         if (isUserOsVersion) {
-            messEl.style.display = 'block';
+            messEl.addClassList('visible');
             break;
         }
     }
