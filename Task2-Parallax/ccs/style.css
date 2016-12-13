@@ -4,7 +4,7 @@ h1 {
 
 .content {
   background: blue;
-  height: 350px;
+  height: 35vh;
   width: 30%;
 }
 
@@ -12,5 +12,5 @@ h1 {
   width: 30%;
   background: red;
   background: url(http://www.verticalworld.net/school/programs/uploads/pics/program_108_1.jpg);
-  height: 350px;
+  height: 40vh;
 }
