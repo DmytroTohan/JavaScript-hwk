@@ -48,8 +48,8 @@ function checkForm() {
     var inputElements = document.forms[0].childNodes;
     // Check age
     var age = inputElements[0].value;
-    var pattern = '/[^0-9]/';
-    if (age.search(pattern) !== -1) {
+    var pattern = /([0-9])/g;
+    if (age.search(pattern) !== 0) {
         valid = false;
         alert('age should contains only numbers!');        
     }
