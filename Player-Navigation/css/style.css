@@ -1,0 +1,29 @@
+div#fire {
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background: #332929;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: none;
+}
+
+div#fire.move {
+    display: block;
+    transition: 0.5s ease 0s;
+}
+
+div#player {
+    width: 10px;
+    height: 10px;
+    transition: all 0.3s ease-out 0s;
+    position: absolute;
+    background: red;
+    top: 0px;
+    left: 0px;
+}
+
+div#player.grow {
+    transform: scale(3.5);
+}
