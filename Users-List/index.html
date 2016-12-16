@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/style.css">
+        <title>List of users</title>
+    </head>
+
+    <body>
+        <div class="user-list-content">
+            <div class="title-content">List of users</div>
+            <div class="content">
+                Count:
+                <div id="count">1</div>
+                Average salary:
+                <div id="avg">2000</div>
+                Limit:
+                <div id="limit">10</div>
+            </div>
+            <ul class="employeeList">
+                <li>
+                    <span class="employeeFirstName">John</span>
+                    <span class="employeeLastName">Doe</span>
+                    <span class="employeeSalary">$ 1000</span>
+                    <span class="employeePosition">Manager</span>
+                </li>
+            </ul>
+            <div class="employee-content">
+                <input type="text" name="FirstName" placeholder="First name">
+                <input type="text" name="LastName" placeholder="Last name">
+                <input type="text" name="Salary" placeholder="Salary">
+                <input type="text" name="Position" placeholder="Position">
+                <div class="property-btn">
+                    <button id="btn-save">Save</button>
+                    <button id="btn-cancel">Cancel</button>
+                </div>
+            </div>
+            <button id="newEmployee" class="addEmployee">Add New emplyee</button>
+        </div>
+        <script src="js/app.js"></script>
+    </body>
+
+</html>
