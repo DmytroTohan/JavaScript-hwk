@@ -29,16 +29,20 @@ body {
     border-left: 1px solid #b3bfd1;
 }
 
+.employeeList li {
+    width: max-content;
+}
+
 .employeeList li:hover .btn-delete {
     display: inline-block;
     margin-left: 10px;
 }
 
-.btn-edit, .btn-delete {
+.btn-delete {
     display: none;
 }
 
-.btn-edit:before {
+#btn-edit:before {
     content: "\270E";
 }
 
