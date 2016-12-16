@@ -1,0 +1,68 @@
+body {
+    background: #e3e8ef;
+}
+.user-list-content {
+    margin: 5px;
+}
+
+.title-content {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    font-size: 22px;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.content {
+    margin-top: 5px;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.content div {
+    margin-right: 10px;
+}
+
+.employeeList {
+    width: 30%;
+    padding-left: 30px;
+    border-left: 1px solid #b3bfd1;
+}
+
+.employeeList li:hover .btn-delete {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.btn-edit, .btn-delete {
+    display: none;
+}
+
+.btn-edit:before {
+    content: "\270E";
+}
+
+.btn-delete:before {
+    content: "\2718";
+}
+
+.addEmployee {
+    margin-top: 5px;
+}
+
+.content {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.property-btn {
+    margin-top: 5px;
+}
+
+.employee-content {
+    display: none;
+}
+
+div.employee-content.visible {
+    display: block;
+}
