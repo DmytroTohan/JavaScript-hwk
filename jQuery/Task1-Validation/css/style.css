@@ -1,0 +1,23 @@
+#validate input {
+    margin: 5px;
+}
+
+#validate input:last-child:hover {
+    transform: scale(1.2);
+    border-radius: 5px;
+    background: rgb(48, 149, 123);
+}
+
+#validate fieldset {
+    margin-bottom: 20px;
+    border: 1px solid grey;
+}
+
+#validate label {
+    display: inline-block;
+    width: 50px;
+}
+
+span.errors {
+    color: rgb(172, 48, 71);
+}
