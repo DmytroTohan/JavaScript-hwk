@@ -6,8 +6,26 @@
         <title>Timer</title>
     </head>
     <body>
-        <div data-countdown data-countdown-start="91:00:02:15">loading..</div>
-    <script src="js/app.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-</body>
+        <div data-countdown data-countdown-start="91:00:02:15">loading..
+            <div class="countdown-timer">
+                <p>We're coming soon...</p>
+                <table id="timer">
+                    <tr class="timer-content">
+                        <th class="days"></th>
+                        <th class="hours"></th>
+                        <th class="minutes"></th>
+                        <th class="seconds"></th>
+                    </tr>
+                    <tr class="timer-labels">
+                        <td>DAYS</td>
+                        <td>HOURS</td>
+                        <td>MINUTES</td>
+                        <td>SECONDS</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="js/app.js"></script>
+    </body>
 </html>
