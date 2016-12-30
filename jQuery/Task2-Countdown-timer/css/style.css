@@ -1,3 +1,35 @@
 body {
-	background-image: url(img/back.png);
+    background: url(http://www.lanlinglaurel.com/data/out/175/5519462-black-background-image.jpg);
+}
+
+div[data-countdown-start] {
+  color: #edeff2;
+}
+
+.countdown-timer {
+  text-align: center;
+}
+
+.countdown-timer p {
+  font-family: Georgia, serif;
+  font-size: 36px;
+  font-weight: 200;
+}
+
+#timer {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  border-spacing: 20px;
+}
+
+.timer-content th {
+  width: 80px;
+  height: 110px;
+  background: #edeff2;
+  color: #26292d;
+  border-radius: 5px;
+  font-family: sans-serif;
+  font-size: 40px;
+  font-weight: bold;
 }
