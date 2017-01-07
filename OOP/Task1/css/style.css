@@ -1,0 +1,13 @@
+#btn-bill {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+div {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+#bill td {
+    text-align: center;
+}
