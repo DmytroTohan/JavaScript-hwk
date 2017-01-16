@@ -1,0 +1,42 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.work-area {
+  padding: 20px;
+}
+
+.template-str {
+  display: inline-block;
+}
+
+.info {
+  display: inline-block;
+}
+
+.info img {
+  width: 20px;
+  height: 20px;
+  vertical-align: bottom;
+}
+
+.info:hover::after{
+  content: attr(data-title);
+  background: #ebf0e3
+}
+
+input {
+  min-width: 400px;
+}
+
+#compile {
+  margin-top: 10px;
+  width: 60px;
+  background: #e3f1ed;
+  border-radius: 3px;
+}
+
+#user-list {
+  margin-top: 10px;
+}
