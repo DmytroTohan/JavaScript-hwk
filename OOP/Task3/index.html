@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="utf-8">
+    <title>People management</title>
+</head>
+
+<body>
+    <form id="registration">
+        <fieldset>
+            <legend>Registration</legend>
+            <label for="name">Name</label>
+            <input type="text" name="name" pattern="[A-Za-z]{1,25}" title="Only letters" placeholder="John" required>
+            <br>
+            <label for="sex">Sex</label>
+            Male
+            <input type="radio" name="sex" value="Male" checked>
+            Female
+            <input type="radio" name="sex" value="Female">
+            Other
+            <input type="radio" name="sex" value="Other">
+            <br>
+            <label for="birthdate">Birth date</label>
+            <input type="date" name="birthdate" required="">
+            <br>
+            <label for="address">Address</label>
+            <input type="text" name="address" placeholder="Park Avenue 25" required>
+            <br>
+            <label for="phone">Phone</label>
+            <input type="number" name="phone" pattern="[0-9]{10}" placeholder="0630471688" required>
+            <br>
+            <label for="email">Email</label>
+            <input type="email" name="email" placeholder="dima.togan@gmail.com" required>
+            <br>
+            <input type="submit" id="save-btn" value="Save">
+        </fieldset>
+    </form>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+</body>
+
+</html>
