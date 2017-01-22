@@ -97,7 +97,7 @@ function getRegistrationInfo() {
     var isValid = true;
     var regInfo = {};
     // all input elements
-    $('input').each(function(index, item) {
+    $('#registration input').each(function(index, item) {
         // without unchecked radio and 'submit' button
         if ((item.name === 'sex' && !item.checked) || item.type === 'submit') {
             return;
