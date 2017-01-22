@@ -1,0 +1,49 @@
+fieldset {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid grey;
+}
+
+label {
+    padding-top: 10px;
+    display: inline-block;
+    width: 80px;
+}
+
+input:not(:last-child) {
+  min-width: 200px;
+}
+
+#save-btn {
+  margin-top: 10px;
+  width: 50px;
+  height: 24px;
+  font-weight: bold;
+  font-size: 14px;
+  background: #ebebf4;
+  border-radius: 5px;
+}
+
+table, td, th {
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 15px;
+}
+
+tr:not(:first-child):hover {
+  border: 3px solid #b2c2dd;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+td.invisible {
+  display: none;
+}
