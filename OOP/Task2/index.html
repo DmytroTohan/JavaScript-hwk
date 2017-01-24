@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="utf-8">
+    <title>Task2</title>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="casino-lable">CASINO</div>
+        <div class="casino-container">
+            <div class="left-container">
+                <div class="casino-manager">
+                    <div class="manager-top">
+                        <form>
+                            <fieldset>
+                                <legend>Casino manager</legend>
+                                <label for="CasinoMoney">Casino money:</label>
+                                <input type="number" name="CasinoMoney" min="10" required>
+                                <br>
+                                <label for="MachineNumber">Number of slot machine:</label>
+                                <input type="number" name="MachineNumber" min="1" max="10" required>
+                                <br>
+                                <button id="create-casino-btn">Create casino</button>
+                            </fieldset>
+                        </form>
+                        <div class="casino-info" hidden>
+                            <div class="money-in-casino">
+                                Money in casino: <span></span>$
+                            </div>
+                            <div class="machines-in-casino">
+                                Slot machines in casino: <span></span>$
+                            </div>
+                            <div class="add-slot-container">
+                                <button id="add-machine-btn">Add slot machin</button>
+                            </div>
+                            <div class="delete-slot-container">
+                                Slot machine:<input type="number">
+                                <button id="delete-machine-btn">Delete</button>
+                            </div>
+                            <div class="withdraw-money-container">
+                                Sum:<input type="number">
+                                <button id="withdraw-money-btn">Withdraw money</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-container">
+                <table id="slot-table">
+                    <tr>
+                        <td>
+                            <div class="work-slot" hidden>
+                                <p class="slot-number">Slot machine #<span class="slot-number">1</span></p>
+                                <div class="slot-play-area">
+                                    <div class="game-number">1</div>
+                                    <div class="game-number">2</div>
+                                    <div class="game-number">3</div>
+                                </div>
+                                <p class="slot-money"></p>
+                                <div class="control-btn" data-index="1">
+                                    <button class="play-btn">Play</button>
+                                    <button class="put-money-btn">Put money</button>
+                                    <button class="withdraw-money-btn">Withdraw money</button>
+                                </div>
+                            </div>
+                            <div class="unwork-slot">
+                                <span>Place for slot machine</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="work-slot" hidden>
+                                <p class="slot-number">Slot machine #<span class="slot-number">2</span></p>
+                                <div class="slot-play-area">
+                                    <div class="game-number">1</div>
+                                    <div class="game-number">2</div>
+                                    <div class="game-number">3</div>
+                                </div>
+                                <p class="slot-money"></p>
+                                <div class="control-btn" data-index="2">
+                                    <button class="play-btn">Play</button>
+                                    <button class="put-money-btn">Put money</button>
+                                    <button class="withdraw-money-btn">Withdraw money</button>
+                                </div>
+                            </div>
+                            <div class="unwork-slot">
+                                <span>Place for slot machine</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="work-slot" hidden>
+                                <p class="slot-number">Slot machine #<span class="slot-number">3</span></p>
+                                <div class="slot-play-area">
+                                    <div class="game-number">1</div>
+                                    <div class="game-number">2</div>
+                                    <div class="game-number">3</div>
+                                </div>
+                                <p class="slot-money"></p>
+                                <div class="control-btn" data-index="3">
+                                    <button class="play-btn">Play</button>
+                                    <button class="put-money-btn">Put money</button>
+                                    <button class="withdraw-money-btn">Withdraw money</button>
+                                </div>
+                            </div>
+                            <div class="unwork-slot">
+                                <span>Place for slot machine</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="work-slot" hidden>
+                                <p class="slot-number">Slot machine #<span class="slot-number">4</span></p>
+                                <div class="slot-play-area">
+                                    <div class="game-number">1</div>
+                                    <div class="game-number">2</div>
+                                    <div class="game-number">3</div>
+                                </div>
+                                <p class="slot-money"></p>
+                                <div class="control-btn" data-index="4">
+                                    <button class="play-btn">Play</button>
+                                    <button class="put-money-btn">Put money</button>
+                                    <button class="withdraw-money-btn">Withdraw money</button>
+                                </div>
+                            </div>
+                            <div class="unwork-slot">
+                                <span>Place for slot machine</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="work-slot" hidden>
+                                <p class="slot-number">Slot machine #<span class="slot-number">5</span></p>
+                                <div class="slot-play-area">
+                                    <div class="game-number">1</div>
+                                    <div class="game-number">2</div>
+                                    <div class="game-number">3</div>
+                                </div>
+                                <p class="slot-money"></p>
+                                <div class="control-btn" data-index="5">
+                                    <button class="play-btn">Play</button>
+                                    <button class="put-money-btn">Put money</button>
+                                    <button class="withdraw-money-btn">Withdraw money</button>
+                                </div>
+                            </div>
+                            <div class="unwork-slot">
+                                <span>Place for slot machine</span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="work-slot" hidden>
+                                <p class="slot-number">Slot machine #<span class="slot-number">6</span></p>
+                                <div class="slot-play-area">
+                                    <div class="game-number">1</div>
+                                    <div class="game-number">2</div>
+                                    <div class="game-number">3</div>
+                                </div>
+                                <p class="slot-money"></p>
+                                <div class="control-btn" data-index="6">
+                                    <button class="play-btn">Play</button>
+                                    <button class="put-money-btn">Put money</button>
+                                    <button class="withdraw-money-btn">Withdraw money</button>
+                                </div>
+                            </div>
+                            <div class="unwork-slot">
+                                <span>Place for slot machine</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="work-slot" hidden>
+                                <p class="slot-number">Slot machine #<span class="slot-number">7</span></p>
+                                <div class="slot-play-area">
+                                    <div class="game-number">1</div>
+                                    <div class="game-number">2</div>
+                                    <div class="game-number">3</div>
+                                </div>
+                                <p class="slot-money"></p>
+                                <div class="control-btn" data-index="7">
+                                    <button class="play-btn">Play</button>
+                                    <button class="put-money-btn">Put money</button>
+                                    <button class="withdraw-money-btn">Withdraw money</button>
+                                </div>
+                            </div>
+                            <div class="unwork-slot">
+                                <span>Place for slot machine</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="work-slot" hidden>
+                                <p class="slot-number">Slot machine #<span class="slot-number">8</span></p>
+                                <div class="slot-play-area">
+                                    <div class="game-number">1</div>
+                                    <div class="game-number">2</div>
+                                    <div class="game-number">3</div>
+                                </div>
+                                <p class="slot-money"></p>
+                                <div class="control-btn" data-index="8">
+                                    <button class="play-btn">Play</button>
+                                    <button class="put-money-btn">Put money</button>
+                                    <button class="withdraw-money-btn">Withdraw money</button>
+                                </div>
+                            </div>
+                            <div class="unwork-slot">
+                                <span>Place for slot machine</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="work-slot" hidden>
+                                <p class="slot-number">Slot machine #<span class="slot-number">9</span></p>
+                                <div class="slot-play-area">
+                                    <div class="game-number">1</div>
+                                    <div class="game-number">2</div>
+                                    <div class="game-number">3</div>
+                                </div>
+                                <p class="slot-money"></p>
+                                <div class="control-btn" data-index="9">
+                                    <button class="play-btn">Play</button>
+                                    <button class="put-money-btn">Put money</button>
+                                    <button class="withdraw-money-btn">Withdraw money</button>
+                                </div>
+                            </div>
+                            <div class="unwork-slot">
+                                <span>Place for slot machine</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="work-slot" hidden>
+                                <p class="slot-number">Slot machine #<span class="slot-number">10</span></p>
+                                <div class="slot-play-area">
+                                    <div class="game-number">1</div>
+                                    <div class="game-number">2</div>
+                                    <div class="game-number">3</div>
+                                </div>
+                                <p class="slot-money"></p>
+                                <div class="control-btn" data-index="10">
+                                    <button class="play-btn">Play</button>
+                                    <button class="put-money-btn">Put money</button>
+                                    <button class="withdraw-money-btn">Withdraw money</button>
+                                </div>
+                            </div>
+                            <div class="unwork-slot">
+                                <span>Place for slot machine</span>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+</body>
+
+</html>
