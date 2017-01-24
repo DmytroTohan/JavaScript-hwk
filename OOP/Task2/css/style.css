@@ -1,0 +1,127 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main-container {
+  margin: 15px;
+  font-family: fantasy;
+}
+
+.casino-lable {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.casino-container {
+  margin-top: 10px;
+  width: auto;
+  border: 2px solid #3f4747;
+}
+
+.left-container {
+  margin: 10px;
+  display: inline-block;
+  width: 325px;
+  font-size: 16px;
+}
+
+.casino-manager {
+  display: flex;
+  flex-direction: column;
+}
+
+.manager-top {
+  display: flex;
+  align-items: flex-start;
+}
+
+.left-container legend {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.left-container fieldset label {
+  margin-left: 5px;
+  display: inline-block;
+  width: 175px;
+}
+
+#create-casino-btn {
+  margin: 5px;
+  font-family: fantasy;
+  font-size: 16px;
+  width: 310px;
+  text-align: center;
+}
+
+.right-container {
+  margin: 10px;
+  display: inline-block;
+}
+
+#slot-table {
+  display: flex;
+  justify-content: center;
+  border-spacing: 25px;
+}
+
+#slot-table td {
+  width: 12vw;
+  height: 28vh;
+  background: #eeeeee;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid #3c443b;
+}
+
+.slot-number {
+  font-size: 22px;
+}
+
+.slot-money {
+  margin-top: 3px;
+  font-size: 22px;
+}
+
+.control-btn button {
+  width: 100%;
+  font-size: 14px;
+  font-family: fantasy;
+  font-weight: bold;
+}
+
+.game-number {
+  border: 1px solid #2a2629;
+  border-radius: 5px;
+  display: inline-block;
+  width: 30px;
+  height: 60px;
+  font-size: 42px;
+}
+
+.casino-info {
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.casino-info button {
+  padding-top: 1px;
+  font-size: 16px;
+  font-family: fantasy;
+}
+
+.casino-info input {
+  height: 22px;
+}
+
+.delete-slot-container, .withdraw-money-container, .add-slot-container {
+  margin-top: 3px;
+  font-size: 16px;
+}
+
+#delete-machine-btn {
+  padding: 3px 4px;
+}
