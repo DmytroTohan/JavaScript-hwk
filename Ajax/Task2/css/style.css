@@ -1,0 +1,28 @@
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.main-container {
+  margin: 10px;
+}
+
+.controller-container {
+  margin: 20px 3px;
+}
+
+.loading-img {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+}
+
+#images img {
+  height: 50px;
+  margin: 3px;
+}
+
+span.invisible {
+  display: none;
+}
